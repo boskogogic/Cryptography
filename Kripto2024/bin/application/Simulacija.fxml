@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="302.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SimulacijaController">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="497.0" prefWidth="390.0" style="-fx-background-color: white;">
+         <children>
+            <TextArea fx:id="textAreaEnkripcija" layoutX="24.0" layoutY="79.0" prefHeight="175.0" prefWidth="342.0" promptText="Unesite tekst za enkripciju">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <ComboBox fx:id="comboBoxSifrat" layoutX="210.0" layoutY="266.0" prefWidth="150.0" />
+            <Label layoutX="118.0" layoutY="262.0" prefHeight="34.0" prefWidth="92.0" text="Izaberite sifrat">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonEnkriptuj" layoutX="107.0" layoutY="368.0" mnemonicParsing="false" onAction="#enkriptuj" prefHeight="25.0" prefWidth="150.0" text="Enkriptuj" />
+            <Label layoutX="118.0" layoutY="308.0" prefHeight="34.0" prefWidth="92.0" text="Upisite kljuc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textAreaKljuc" layoutX="210.0" layoutY="306.0" prefHeight="37.0" prefWidth="150.0" />
+            <Label layoutX="84.0" layoutY="21.0" style="-fx-background-color: white;" text="             SIMULACIJA">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="70.0" layoutY="56.0" prefHeight="8.0" prefWidth="256.0" />
+            <Separator layoutX="67.0" layoutY="401.0" prefHeight="8.0" prefWidth="256.0" />
+            <Button fx:id="buttonIzlistajDirektorijum" layoutX="216.0" layoutY="425.0" mnemonicParsing="false" onAction="#izlistajDirektorijum" prefHeight="25.0" prefWidth="150.0" text="Sadrzaj direktorijuma" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
